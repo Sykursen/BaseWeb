@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>TP M1105</title>
+</head>
+<body>
+<h1>Réserver</h1>
+<header>
+	<ul>
+		<li><a href="index.html">Accueil</a></li>
+		<li><a href="chambres.html">Nos chambres</a></li>
+		<li><a href="reservations.html">Réserver</a></li>
+		<li><a href="contact.html">Nous retrouver</a></li>
+	</ul>
+</header>
+<form action="mailto:toto@toto.fr" enctype="text/plain" method="POST">
+	<fieldset>
+		<p>
+			<label for="genreMonsieur">Monsieur</label>
+			<input type="radio" id="genreMonsieur" name="gender"/>
+			<label for="genreMadame">Madame</label>
+			<input type="radio" id="genreMadame" name="gender"/>
+		</p>
+		<p>
+			<label for="name">Nom</label>
+			<input type="text" id="name" name="name" required placeholder="Nom" />
+			<label for="firstname">Prénom</label>
+			<input type="text" id="firstname" name="firstname" required placeholder="Prénom" />
+		</p>
+		<p>
+			<label for="mail">Mail</label>
+			<input type="email" id="mail" name="mail" required placeholder="contact@mail.com" />
+			<label for="tel">Téléphone</label>
+			<input type="tel" id="tel" name="tel" required placeholder="06 00 00 00 00" />
+		</p>
+		<p>
+		<select id="chambre" name="chambre">
+			<option value="LaFontaine1">La Fontaine 1</option>
+			<option value="LaFontaine2">La Fontaine 2</option>
+			<option value="LaFontaine3">La Fontaine 3</option>
+		</select>	
+		</p>
+		<p>
+				<label for="dateArrive">Date d'arrivé</label>
+				<input type="date" id="dateArrive" name="dateArrive" required />	
+				<label for="dateDepart">Date de départ</label>
+				<input type="date" id="dateDepart" name="dateDepart" required />
+			</p>
+		<p>
+			<label for="nbrePersonnes">Nombre de personnes</label>
+			<input type="number" id="nbrePersonnes" name="nbrePersonnes" required min="1" max="4"/>
+			<label for="nbrePetitDej">Nombre de personnes</label>
+			<input type="number" id="nbrePetitDej" name="nbrePetitDej" required min="0"	max="4" />
+		</p>
+		<p>
+			<label for="parking">Parking</label>
+			<input type="checkbox" id="parking" name="parking" />
+		</p>
+		<p>
+			<textarea id="commentaire" name="commentaire" rows="5" cols="80">Commentaire</textarea>
+		</p>
+		<p>
+			<input type="submit" value="Valider" />
+		</p>
+		<p>
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=5.067639648914338%2C47.310778309255795%2C5.0701501965522775%2C47.31202039513558&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/47.31140/5.06889">Afficher une carte plus grande</a></small>
+		</p>
+	</fieldset>
+</form>
+<footer>
+		<ul>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="legal.html">Mentions Légales</a></li>
+		</ul>
+</footer>
+</body>
+</html>
