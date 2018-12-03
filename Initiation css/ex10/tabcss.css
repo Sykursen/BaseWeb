@@ -1,0 +1,24 @@
+table, th, td, tr{
+    border: 1px solid black;
+}
+
+#borderless table, #borderless th, #borderless td, #borderless tr{
+    border-style: none;
+}
+
+#borderthin table, #borderthin th, #borderthin td, #borderthin tr{
+    border-collapse: collapse;
+}
+
+.pleine_page table{
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.couleurs th,.lignes th{
+    background-color: blue;
+    color: white;
+}
+.lignes tr:nth-child(odd) {
+    background: lightblue;
+}

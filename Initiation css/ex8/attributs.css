@@ -1,0 +1,15 @@
+body {
+    font-size: 20px;
+}
+
+#menu {
+    color: red;
+}
+
+h1[title]{
+    color: blue;
+}
+
+div#men p::first-line{
+    color: green;
+}
